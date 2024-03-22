@@ -1,0 +1,190 @@
+
+
+.allt{
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+
+    height: 555px;
+
+    background-color: aquamarine;
+}
+
+.ett,.två,.tre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.ett{
+    background-color: aqua;
+    height: 75px;
+}
+
+#nav{
+
+    height: 66%;
+    width: 100%;
+    min-width: 100px;
+    
+}
+
+.två{
+    background-color: blue;
+    
+}
+
+#main,#aside{
+    height: 300px;
+}
+
+#main{
+    width: 66%;
+}
+
+#aside{
+    width: 33%;
+}
+
+.tre{
+    background-color: purple;
+    flex-wrap: wrap;
+}
+
+.column1,.column2,.column3,.column4,.column5,.column6{
+width: 30%;
+}
+
+h1{
+
+    color: brown;
+    margin: 10px;
+
+}
+
+p{
+    font-size:xx-large;
+    color: white;
+}
+
+#nav,#main,#aside,.column1,.column2,.column3,.column4,.column5,.column6{
+    
+    margin: 10px;
+
+    background-color: brown;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*
+
+#nav,#main,#aside,.column{
+    background-color: brown;
+    margin: 1px;
+    
+    justify-content: center;
+    align-items: center;
+
+    display: inline-flex;
+
+}
+
+h1{
+
+    color: brown;
+    display: inline;
+}
+
+p{
+    font-size:xx-large;
+    color: white;
+}
+
+#nav{
+    width:87.9%;
+    height: 50px;
+}
+
+#main{
+    width: 66%;
+    height: 200px;
+}
+
+#aside{
+    width: 33%;
+    height: 200px;
+}
+
+.column{
+
+    width: 49.5%;
+} */
+
+
+@media only screen and (max-width:1000px) {
+    body{
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    body{
+        background-color: grey;
+    }
+
+    .två{
+        flex-wrap: wrap;
+
+    }
+  #main{
+    width: 100%;
+    height: 123px;
+    margin-bottom: 1px;
+  }
+
+  #aside{
+    width: 100%;
+    height: 100px;
+  }
+
+  .column1,.column2,.column3,.column4,.column5,.column6{
+    width: 45%;
+    height: 66px;
+    margin-bottom: 1px;
+  }
+
+}
+
+@media only screen and (max-width:300px) {
+    body{
+        background-color: black;
+    }
+    h1{
+        margin: 0px;
+    }
+    .ett{
+        flex-wrap: wrap;
+        height: 33%;
+    }
+
+    #nav{
+        margin: 0px;
+        height: 66%;
+    }
+
+    .två{
+        height: 66%;
+    }
+
+    #main{
+        height: 66%;
+        margin-top: 33px;
+        margin-bottom: 33px;
+    }
+    
+}
